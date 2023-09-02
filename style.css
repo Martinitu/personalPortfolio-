@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lato:ital,wght@0,100;0,300;0,400;1,700;1,900&display=swap');
+
+body {
+  
+    font-family:'Lato', Helvetica, sans-serif;;
+    
+   
+}
+
+.headerPhoto {
+    
+    padding: 40px;
+    background: linear-gradient(to top left, white 25%, white 0%, rgb(0,139,139) 100%, rgb(0,139,139) 75%);
+    background-repeat: no-repeat;
+
+}
+.headerPhoto img {
+  
+  
+}
+.name {
+    z-index: 100;
+  position: absolute;
+ color: white;
+  font-size: 50px;
+  
+  left: 25px;
+  top: 225px;
+  text-shadow: 2px 2px gray;
+
+}
+.lastname {
+  
+  top: 275px;
+
+
+}
+h1 {
+    font-weight: normal;
+    font-family:'Cinzel', serif;;
+}
+
+.aboutMeDiv {
+    padding: 0 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutMeDiv p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: justify;
+}
+.aboutMeDiv h1 {
+    padding: 0;
+    margin: 40px 0 20px 0;
+}
+.iconDiv {
+    display: flex;
+    
+}
+a {
+    text-decoration: none;
+}
+a, a:visited {
+    color: inherit;
+}
+
+i {
+    font-size: 25px;
+    margin-right: 25px;
+}
