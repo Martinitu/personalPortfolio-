@@ -7,15 +7,27 @@ body {
    
 }
 
-.headerPhoto {
-    
-    padding: 40px;
-    background: linear-gradient(to top left, white 25%, white 0%, rgb(0,139,139) 100%, rgb(0,139,139) 75%);
+p {
+    font-weight: 300;
+}
+
+.headerBackground {
+   
+    z-index: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top left, white 30%, #ffdb58 0%, #ffdb58 0%, rgb(204, 122, 0) 0%);
     background-repeat: no-repeat;
 
 }
-.headerPhoto img {
-  
+.headerPhoto {
+    box-shadow: 10px 5px 5px grey;
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    z-index: 100;
+    min-width: 300px;
+    height: auto;
   
 }
 .name {
@@ -27,6 +39,7 @@ body {
   left: 25px;
   top: 225px;
   text-shadow: 2px 2px gray;
+  
 
 }
 .lastname {
@@ -39,13 +52,22 @@ h1 {
     font-weight: normal;
     font-family:'Cinzel', serif;;
 }
+h2 {
+    font-weight: normal;
+    font-family:'Cinzel', serif;;
+}
 
-.aboutMeDiv {
-    padding: 0 40px 40px 40px;
+.sectionDiv {
+    padding: 40px 40px 40px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.aboutMeDiv {
+    box-shadow: 10px 5px 5px grey;
+   
+}
+
 .aboutMeDiv p {
     padding: 0;
     margin: 0 0 20px 0;
@@ -53,7 +75,7 @@ h1 {
 }
 .aboutMeDiv h1 {
     padding: 0;
-    margin: 40px 0 20px 0;
+    margin: 0px 0 20px 0;
 }
 .iconDiv {
     display: flex;
@@ -69,4 +91,172 @@ a, a:visited {
 i {
     font-size: 25px;
     margin-right: 25px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.projectTitle {
+    display: flex;
+    align-content: center;
+    margin: 10px;
+}
+.projectTitle h2 {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.project {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 5px 5px grey;
+    max-width: 300px;
+}
+.project img {
+    max-width: 300px;
+}
+
+.project p {
+    max-width: 280px;
+    margin: 20px;
+}
+
+.projectTitle img {
+    margin: 0;
+    max-width: 25px;
+}
+.projectTitle i {
+    margin-right: 5px;
+}
+
+.contactMe {
+    background-color: rgb(204, 122, 0);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.contactMeInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.contactMe h1 {
+    font-size: 45px;
+}
+
+.contactMe p {
+    margin: 0px 40px 20px 40px;
+}
+
+.contactMe i {
+    color: black;
+}
+
+.downPicture {
+    width: 100%;  
+}
+
+@media (min-width: 800px) {
+ 
+    .name {
+      left: 275px;
+      top: 0px;
+    }
+    .lastname {
+      
+        left: 485px;
+    }
+    
+    .header {
+        display: flex;
+    }
+    .aboutMeDiv {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        left: 200px;
+        width: 400px;
+        max-height: 400px;
+        min-height: 300px;
+        background-color: white;
+        top: 100px;
+        text-align: end;
+    }
+    .aboutMeDiv .p1 {
+        width: 200px;
+    }
+
+    .main {
+        margin: 250px 0 50px 0;
+    }
+
+    .projectContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .project {
+        margin: 40px;
+    }
+
+    .contactMe {
+        flex-direction: row;
+        text-align:left;
+        max-height: 900px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .downPicture {
+      background-color: white;  
+      max-width: 50%;
+      min-height:100%;
+    }
+
+    @media (min-width: 1000px){
+
+        .projectContainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+        }
+        .name {
+      
+            left: 25px;
+            top: 225px;
+         }
+          .lastname {
+            
+            top: 275px;
+        }
+          .aboutMeDiv {
+            
+            left: 500px;
+            width: 500px;
+            top: 50px;
+            text-align: end;
+        }
+        .aboutMeDiv .p1 {
+            width: auto;
+    
+            
+        }
+
+    }
+
 }
