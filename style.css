@@ -21,7 +21,7 @@ p {
 
 }
 .headerPhoto {
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
     position: absolute;
     left: 60px;
     top: 25px;
@@ -38,7 +38,7 @@ p {
   
   left: 25px;
   top: 225px;
-  text-shadow: 2px 2px gray;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   
 
 }
@@ -64,7 +64,7 @@ h2 {
     align-items: center;
 }
 .aboutMeDiv {
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
    
 }
 
